@@ -1,0 +1,29 @@
+{
+  "name": "BookLogger",
+  "description": "this the book site for add book",
+  "main": "index.html",
+  "authors": [
+    "malitha"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bower"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-cookies": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "ng-table": "1.0.0"
+  }
+}

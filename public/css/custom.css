@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'custom1';
+    src: url('../fonts/Super Mario Bros.ttf')  format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'custom2';
+    src: url('../fonts/ultimate MIDNIGHT.ttf')  format('truetype');
+    font-weight: bold;
+}
+.book {
+    font-family: 'custom2', Fallback, sans-serif;
+}
+body > h1 {
+    font-family: 'custom1', Fallback, sans-serif;
+}
