@@ -15,15 +15,14 @@
         };
 
         function requestInterceptor(config) {
-
-            //$log.debug('HTTP ' + config.method + ' request - ' + config.url);
+            $log.debug('HTTP ' + config.method + ' request - ' + config.url);
             return config;
 
         }
 
-        function responseErrorInterceptor(response) {
+        function responseErrorInterceptor(response) { 
 
-            //$log.debug('HTTP ' + response.config.method + ' response error - ' + response.config.url);
+            $log.debug('HTTP ' + response.config.method + ' response error - ' + response.config.url);
             return $q.reject(response);
 
         }

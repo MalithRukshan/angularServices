@@ -2,8 +2,8 @@
     {
         "book_id": 1,
         "title": "Goodnight Moon",
-        "author": "Margaret Wise Brown",
-        "year_published": "1953/sd"
+        "author": "malitha",
+        "year_published": "1953/sdbg"
     },
     {
         "book_id": 2,
@@ -20,37 +20,13 @@
     {
         "book_id": 4,
         "title": "The Hobbit",
-        "author": "J. R. R. Tolkien",
+        "author": "malitha",
         "year_published": "1937cZcz"
     },
     {
         "book_id": 5,
-        "title": "Curious George",
-        "author": "H. A. Rey",
-        "year_published": "1941bvv"
-    },
-    {
-        "book_id": 6,
-        "title": "dgsdgsdg",
-        "author": "dfgsdfsd",
-        "year_published": "2017/14/75"
-    },
-    {
-        "book_id": 8,
-        "title": "dfsdfsdsdgfdg",
-        "author": "sdfsd",
-        "year_published": "324234"
-    },
-    {
-        "book_id": 9,
-        "title": "The Hobbit sd",
+        "title": "11111",
         "author": "malitha",
-        "year_published": "sdasdasdas"
-    },
-    {
-        "book_id": 10,
-        "title": "wewq",
-        "author": "wqe",
-        "year_published": "qwe"
+        "year_published": "111ghfghfgh"
     }
 ]

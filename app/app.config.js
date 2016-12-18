@@ -113,6 +113,10 @@ app.provider('booksll', ['constants',booksll ]);
             message = 'Awesome!!! - ' + message;
             $delegate.debug(message);
         }
+        function awesomeInfo(message) {
+            message = 'Awesome!!! - ' + message;
+            $delegate.debug(message);
+        }
 
         return {
             log: log,
@@ -120,7 +124,8 @@ app.provider('booksll', ['constants',booksll ]);
             warn: warn,
             error: error,
             debug: debug,
-            awesome: awesome
+            awesome: awesome,
+            awesomeInfo:awesomeInfo
         };
 
 

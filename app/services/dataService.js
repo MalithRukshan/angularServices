@@ -1,10 +1,10 @@
 
 
     angular.module('book.services',[])
-        .factory('dataService', ['$q', '$timeout', '$http', 'constants', '$cacheFactory', dataService]);
+        .factory('dataService', ['$q','$log', '$timeout', '$http', 'constants', '$cacheFactory', dataService]);
 
 
-    function dataService($q, $timeout, $http, constants, $cacheFactory) {
+    function dataService($q, $log,$timeout, $http, constants, $cacheFactory) {
 
         return {
             getAllBooks: getAllBooks,
@@ -85,7 +85,7 @@
                 headers: {
                     'PS-BookLogger-Version': constants.APP_VERSION
                 },
-                transformResponse: transformGetBooks,
+                transformResponse: transformGetBooks, /*add some more attribit to array*/
                 cache: true
             })
             .then(sendResponseData)
@@ -109,13 +109,15 @@
                 currentValue.dateDownloaded = new Date();
             });
 
-            //console.log(transformed);
+            console.log(transformed);
             return transformed;
 
         }
 
         function sendResponseData(response) {
+           //    $log.awesomeInfo("awesomeInfo");
        // throw("exception throw");
+            //$log.error(variablenmame);
             return response.data;
 
         }
@@ -142,11 +144,16 @@
             return $http({
                 method: 'PUT',
                 url: 'api/books/' + book.book_id,
-                data: book
+                data: book,
+                transformRequest:updateBookTranfomation
             })
             .then(updateBookSuccess)
             .catch(updateBookError);
 
+        }
+        function  updateBookTranfomation(data, headersGetter) {
+            data.author="malitha";
+            return JSON.stringify(data);
         }
 
         function updateBookSuccess(response) {

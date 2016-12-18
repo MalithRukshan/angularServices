@@ -18,7 +18,7 @@
         };
 
         function addBookSuccess(message) {
-            $log.info(message);
+            $log.info(message+"rrrrrr");
             $location.path('/');
         }
 
